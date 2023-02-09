@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .button {
+        padding: 10px 20px;
+        background-color: lightblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Go down Click any button</h1>
+      <br />
+    </div>
+    <div class="container">
+      <button class="button" id="button1">Button 1</button>
+      <button class="button" id="button2">Button 2</button>
+    </div>
+
+    <script>
+      document.getElementById("button1").addEventListener("click", function () {
+        window.location.href = "./sorry.html";
+      });
+
+      document.getElementById("button2").addEventListener("click", function () {
+        alert("You already read the massge then why button 2???");
+      });
+    </script>
+  </body>
+</html>
